@@ -1,0 +1,135 @@
+// Start HEADER
+.ba-header-works {
+  margin: 0 auto;
+  min-height: 239px;
+  text-align: center;
+  &__image{
+    width: 40px;
+    height: 60px;
+    margin: 49px auto 36px;
+ }
+  &__title{
+    width: 100%;
+    min-height: 26px;
+    color: #fefcfd;
+    font-family: "Proxima Nova",sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    
+  }
+}
+// End HEADER
+// Start MAIN
+.ba-recent-work{
+  margin: 0 auto;
+  width: 100%;
+
+  min-height: 1000px;
+  background: url(../img/works-bg.png) center no-repeat;
+  background-size: cover;
+  background-color: #b3b0d5;
+
+}
+.ba-content-works{
+  margin: 0 auto;
+  max-width:1270px;
+  height:602px;
+}
+
+.carousel {
+  margin: 0 0; /* space for prev/next buttons */
+  max-width: 1270px;
+  height: 546px;
+  background: transparent;
+}
+
+.carousel-cell {
+  width: 730px;
+  height: 546px;
+  margin-right: 30%;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+
+/* smaller, dark, rounded square*/
+.flickity-prev-next-button {
+  width: 90px;
+  height: 90px;
+  padding: 0;
+  border-radius: 50%;
+  background: none;
+  &:hover{
+    background: transparent;
+  }
+}
+
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: 10px;
+
+
+}
+.flickity-prev-next-button.next {
+  right: 10px;
+}
+
+/* position dots in carousel */
+.flickity-page-dots {
+  bottom: -58px;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  background: transparent;
+  border: 1px solid white;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}
+
+
+///**************media roole*******************/
+@media screen and (max-width: 860px) {
+  .flickity-prev-next-button {
+    background: rgba(255,255,255, 0.45);
+    &:hover{
+      background: transparent;
+    }
+  }
+}
+// End MAIN
+// Start FOOOTER
+.ba-view{
+  margin: 0 auto;
+  min-height: 159px;
+  text-align: center;
+  width: 100%;
+
+  &__button{
+    margin-top: 49px;
+    width: 195px;
+    height: 50px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: "PT Sans",sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    &:hover{
+      background: rgba(255,255,255,0.35);
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+ }
+}
+// End FOOTER

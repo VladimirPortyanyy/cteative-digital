@@ -1,0 +1,149 @@
+.ba-header-meet{
+  margin: 0 auto;
+  min-height: 242px;
+  text-align: center;
+  &__icon{
+    width: 60px;
+    height: 60px;
+    margin: 54px auto 34px;
+ }
+  &__title{
+    width: 100%;
+    min-height: 26px;
+    color: #665f60;
+    font-family: "Proxima Nova",sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+
+.ba-meet-team{
+  margin: 0 auto;
+  min-height: 818px;
+  text-align: center;
+  background-color: #ebebeb;
+}
+
+.carousel-team {
+  margin: 0 auto;
+  max-width: 1289px;
+  height: 478px;
+  background: transparent;
+  padding-left: 83px;
+
+  .flickity-viewport{
+    max-width: 1109px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 100px;
+    min-width: 300px;
+  }
+
+// arrows
+  /* smaller, dark, rounded square*/
+  .flickity-prev-next-button {
+    width: 90px;
+    height: 90px;
+    padding: 0;
+    background: none;
+    &:hover{
+      background: transparent;
+    }
+  }
+
+  /* arrow color */
+  .flickity-prev-next-button .arrow {
+    fill: #665f60;
+
+  }
+  /* position outside */
+  .flickity-prev-next-button.previous {
+   left: -10px;
+    top:276px;
+
+  }
+  .flickity-prev-next-button.next {
+   right: 7px;
+    top:276px;
+  }
+  //end arrows
+
+}
+
+.carousel-cell-team {
+  width: 100%;
+  max-width: 380px;
+  min-width: 200px;
+  padding-right: 30px;
+  height: 478px;
+  background: transparent;
+  counter-increment: gallery-cell;
+  position: relative;
+  margin-right: 30px;
+  &__person{
+    margin: 0 auto;
+   // margin-top:-5px;
+    border-radius: 50%;
+    max-width: 239px;
+    height: 237px;
+    z-index: 1000;
+    border:10px solid #ebebeb;
+  }
+  &__socialnet{
+    margin: 0 auto;
+    width: 100%;
+    height: 70px;
+    background-color: #9f9acf;
+    display: flex;
+    align-content: center;
+  }
+
+}
+.carousel-person-info{
+  height:284px;
+  width: 100%;
+  max-width: 350px;
+  margin-top: -115px;
+  background-color: #ffffff;
+  padding-top: 163px;
+  &__name{
+    color: #9f9acf;
+    font-family: "Proxima Nova",sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__occupation{
+    margin-top: 32px;
+    color: #665f60;
+    font-family: "PT Sans",sans-serif;
+    font-size: 24px;
+    font-style: italic;
+  }
+}
+.social-account{
+  margin: 0 auto;
+  padding: 0;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  &__item{
+    margin-left: 6.5px;
+    margin-right: 6.5px;
+    list-style:none;
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .carousel-cell-team {
+    margin-right: 120px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .carousel-team {
+   padding-left: 60px;
+  }
+}

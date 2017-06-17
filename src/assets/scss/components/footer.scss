@@ -1,0 +1,38 @@
+
+.ba-footer{
+  margin: 0 auto;
+  width: 100%;
+  min-height: 185px;
+  background-color: #9f9acf;
+  display: flex;
+  justify-content: space-around;
+  &__block{
+    align-self: center;
+    width: 100%;
+    max-width: 1103px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    & > address{
+      color: #ffffff;
+      font-family: "PT Sans",sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+  .address--bold{
+    font-weight: 700;
+  }
+  &-link-style{
+    padding: 0;
+    max-width: 261px;
+    &__item{
+       margin-left: 6.5px;
+        margin-right: 6.5px;
+        list-style:none;
+        display: inline-block;
+    }
+  }
+}
